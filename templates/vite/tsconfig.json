@@ -3,7 +3,6 @@
       "target": "ESNext",
       "lib": ["DOM", "DOM.Iterable", "ESNext"],
       "allowJs": false,
-      "skipLibCheck": false,
       "esModuleInterop": false,
       "allowSyntheticDefaultImports": true,
       "strict": true,
@@ -12,17 +11,18 @@
       "moduleResolution": "Node",
       "resolveJsonModule": true,
       "isolatedModules": true,
-      "noEmit": true,
       "jsx": "react",
       "baseUrl": ".",
       "paths": {
         "@styles*": ["styles*"],
-        "@components*": ["components*"],
-        "@interfaces*": ["interfaces*"],
-        "@utils*": ["utils*"]
-      }
+        "@components*": ["src/components*"],
+        "@interfaces*": ["src/interfaces*"],
+        "@utils*": ["src/utils*"]
+      },
+      "declaration": true,
+      "emitDeclarationOnly": true
     },
     "exclude": ["node_modules"],
-    "include": ["**/*.ts", "**/*.tsx"]
+    "include": ["src/**/*.ts", "src/**/*.tsx"]
   }
   
